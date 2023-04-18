@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etch-a-Sketch</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="jscolor.js" defer></script>
+</head>
+<body>
+  <h1>Etch a Sketch ✏️</h1>
+  <div class="container">
+    <div class="option-container">
+        <input type="color" name="color-input" id="color-input" value="#ff0000" class="selected">
+        <label for="color-input">Color Picker</label>
+        <button id="rainbow-button">Rainbow</button>
+        <button id="eraser-button">Eraser</button>
+        <button id="clear-button">Clear</button>
+        <input type="range" id="grid-size" name="grid-size" max="50" min="1" value="25">
+        <label for="grid-size">Grid Size <span id="grid-label"></span></label>
+    </div>
+    <div class="canvas-container"></div>
+  </div>
+</body>
+</html>
